@@ -24,7 +24,12 @@ nav {
     padding: 20px 0px;
     border-bottom: 1px solid #f1f1f1;
 }
-
+.gym-block-text p {
+    text-align: justify;
+    line-height: 22px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
 .btn.gym-btn {
     background: #ec681d;
     color: #fff;
@@ -34,6 +39,8 @@ nav {
     font-weight: bold;
     border-radius: 2px;
     padding: 8px 20px;
+    float: right;
+    margin: 15px 0;
 }
 .gym-title-h2 {
     font-size: 35px;
