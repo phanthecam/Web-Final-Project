@@ -148,6 +148,12 @@ padding-bottom: 60px
     min-width: 100%;
 }
 
+.single-trainer-item
+{
+    margin: 30px 0px;
+}
+
+
 .single-trainer-item .trainer-text {
     width: 282px;
     transform: translateX(-141px);
@@ -232,8 +238,6 @@ padding-bottom: 60px
     margin-bottom: 0;
     font-size: 14px;
     color: #ffffff;
-    float: right;
-    width: 340px;
     position: relative;
 }
 .subscribe-option .subscribe-form {
@@ -293,10 +297,36 @@ padding-bottom: 60px
     .carousel-multi-item-2 .col-md-3 {
     float: left;
     width: 25%;
-    max-width: 100%; } }
-    
+    max-width: 100%; } 
+    .gym-title-h2 {
+        font-size: 30px;
+        margin-top: 0;
+        line-height: inherit;}
     .carousel-multi-item-2 .card img {
     border-radius: 2px; }
-#equipment img{
+    #equipment img{
     max-height: 400px;
+    }
+}
+}
+@media (max-width: 430px){
+    .gym-title-h2 {
+        font-size: 20px;
+    }
+  
+}
+
+@media (max-width: 480px){
+.gym-title-h2 {
+    font-size: 25px;
+}
+.subscribe-option .subscribe-form {
+    width: 260px;
+}
+}
+
+@media only screen and (max-width: 991px){
+.subscribe-option .so-text {
+    float: none;
+}
 }
