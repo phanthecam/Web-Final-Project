@@ -111,6 +111,20 @@ background-color: #0ba8d8;
     color: #fff;
     
 }
+.gym-sec-pillar{
+background-color: #f5f5f5;
+padding-top:30px ;
+padding-bottom: 60px
+}
+.gym-sec-support{
+    background-color: #f5f5f5;
+    padding-top: 60px ;
+    padding-bottom: 30px;
+}
+
+.gym-sec-range{
+    padding: 60px 0px;
+}
 .gym-pillar{
     display: flex;
     height: 196px;
@@ -127,13 +141,8 @@ background-color: #0ba8d8;
     position: relative;
 }
 
-.gym-text-link{    
-    text-align: center;
-    display: block;
-    padding: 15px 0;
-    color: #ec681d;
-    font-size: 18px;
-
+#equipment .carousel-indicators li{
+    display: none;
 }
 .single-trainer-item img {
     min-width: 100%;
