@@ -20,3 +20,18 @@ nav {
 .nav-item{
     float: right;
 }
+.gym-block-text {
+    padding: 20px 0px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.btn.gym-btn {
+    background: #ec681d;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 8px 20px;
+}
