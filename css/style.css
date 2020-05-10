@@ -1,0 +1,22 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #56595b;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    max-height: 30px;
+    width: auto;
+}
+
+.carousel-inner img {
+    max-height: 996px;
+}
+
+nav {
+    background-color: white;
+    text-align:center;
+}
+
+.nav-item{
+    float: right;
+}
