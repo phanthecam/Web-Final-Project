@@ -186,8 +186,9 @@ padding-bottom: 60px
 }
 .footer-section {
     background: #333;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .contact-option span {
@@ -204,8 +205,8 @@ padding-bottom: 60px
     background-image: url('../img/footer.jpg');
     overflow: hidden;
     padding: 0 45px;
-    margin-bottom: 30px;
-    margin-top: 43px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
