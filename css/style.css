@@ -42,12 +42,44 @@ nav {
     float: right;
     margin: 15px 0;
 }
+@media only screen and  (max-width: 430px){
+    .btn.gym-btn {
+        margin: 20px auto 0;
+        width: 100%;
+    }
+    }
+    @media only screen and (max-width: 768px){
+    .btn.gym-btn {
+        margin: 20px auto;
+        display: block;
+    }
+    }
+
 .gym-title-h2 {
     font-size: 35px;
     color: #05a7d7;
     font-weight: 500;
     text-align: center;
     padding: 20px 0px;
+}
+.fas{
+    font-size: 35px;
+    display: inline-block;
+    color: #ec681d;
+    margin-bottom: 5px;
+}
+.text-100{
+    font-size: 30px;
+    display: inline-block;
+    color: #ec681d;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-style: normal;
+    line-height: initial;
+}
+.gym-support {
+    text-align: center;
+    padding: 20px 0 0;
 }
 
 .pillar1{
