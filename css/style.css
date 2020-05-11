@@ -785,3 +785,11 @@ padding-bottom: 60px
     text-align: justify;
     padding: 0px 50px;
 }
+
+.bmi .table{
+    color: #ec681d;
+}
+
+.bmi .table th{
+    color:#05a7d7;
+}
