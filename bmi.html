@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My GYM</title>
+  <meta charset=utf-8>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta name="viewport" content="width=device-witdh, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+        function calculateBMI(){
+    var weight = document.bmiCalc.weight.value
+    var height = document.bmiCalc.height.value
+    
+    if(weight > 0 && height > 0){
+        var finalBmi = (weight/(height*height))*703;
+        document.bmiCalc.bmi.value = new Number(finalBmi).toFixed(2)
+        
+        if(finalBmi < 18.5){
+            document.bmiCalc.meaning.value = "Underweight BMI"
+        }
+        
+        if(finalBmi > 18.5 && finalBmi < 25){
+            document.bmiCalc.meaning.value = "Normal BMI"
+        }
+        
+        if(finalBmi > 25 && finalBmi < 30){
+            document.bmiCalc.meaning.value = "Overweight BMI"
+        }
+        
+        if(finalBmi > 30 && finalBmi < 35){
+            document.bmiCalc.meaning.value = "Obese BMI"
+        }
+        
+        if(finalBmi > 35){
+            document.bmiCalc.meaning.value = "Extremely Obese BMI"
+        }
+        
+    }else{
+        alert ("invalidate fields.")
+    }
+}
+      
+  </script>
+</head>
+<body>
+    <nav class="navigation  fixed-top navbar navbar-expand-sm navbar-light">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="img/logo.png" alt="Logo">
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">EQUIPMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">MEMBERSHIPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">NEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bmi.html">BMI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="subHeader">
+		<div class="subHeaderMain">
+			<div class="verticalAlign">
+				<h3>BMI</h3>
+			</div>
+		</div>
+    </div>
+    
+    <section class="bmi-cal">
+        <div class="container bmi">
+            <div>
+                <form class="form-bmi" name="bmiCalc">
+                    <div class="bmi-title">BMI Calculator</div>
+                    <div class="bmi-sub">Body Mass Indicator for Adults</div>
+                    <div class="input">
+                        <input for="weight" class="text" placeholder="Your Weight (lbs)*" type="text" name="weight">
+                    </div>
+                    <div class="input">
+                        <input for="height" class="text" placeholder="Your Height (Inches)*" type="text" name="height">
+                    </div>
+                    <div>
+                        <input class="gym-btn" type="button" value="Calculate BMI" onClick="calculateBMI()">
+                    </div>
+                    <div class="input">
+                        <input for="bmi_result" class="text" placeholder="Your BMI" type="text" name="bmi">
+                    </div>
+                    <div class="input">
+                        <input for="bmi_message" placeholder="This Means" class="text" type="text" name="meaning">
+                    </div>
+                    <div>
+                        <input class="gym-btn" type="reset" value="Reset">
+                    </div>
+                    
+                </form>
+
+                <div>
+                    <h2 class="bmi-title">What is BMI?</h2>
+                    <p>BMI is a person’s weight in kilograms divided by the square of height in meters. BMI does not measure body fat directly, but research has shown that BMI is moderately correlated with more direct measures of body fat obtained from skinfold thickness measurements, bioelectrical impedance, densitometry (underwater weighing), dual energy x-ray absorptiometry (DXA) and other methods 1,2,3. Furthermore, BMI appears to be as strongly correlated with various metabolic and disease outcome as are these more direct measures of body fatness 4,5,6,7,8,9. In general, BMI is an inexpensive and easy-to-perform method of screening for weight category, for example underweight, normal or healthy weight, overweight, and obesity.</p>
+                </div>
+                
+                <div>
+                    <h2 class="bmi-title">How is BMI used?</h2>
+                    <p>A high BMI can be an indicator of high body fatness. BMI can be used as a screening tool but is not diagnostic of the body fatness or health of an individual.
+    
+                        To determine if a high BMI is a health risk, a healthcare provider would need to perform further assessments. These assessments might include skinfold thickness measurements, evaluations of diet, physical activity, family history, and other appropriate health screenings</p>
+                </div>
+                
+                <div>
+                    <h2 class="bmi-title">Why is BMI used to measure overweight and obesity?</h2>
+                    <p>BMI can be used for population assessment of overweight and obesity. Because calculation requires only height and weight, it is inexpensive and easy to use for clinicians and for the general public. BMI can be used as a screening tool for body fatness but is not diagnostic.</p>
+                </div>
+
+                
+
+
+
+
+            </div>
+            
+        </div>
+        
+    </section>
+    
+
+
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Phone</span>
+                        <p>(123) 456 8888 - (123) 456 8888 </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Address</span>
+                        <p>72 abc, 55 xyc, Montreal</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Email</span>
+                        <p>contact@mygym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-option">
+                <div class="so-text">
+                    
+                    <h4>Subscribe To Our Mailing List</h4>
+                    <p>Sign up to receive the latest information </p>
+                </div>
+                <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <button type="submit"><i class="fa fa-send"></i></button>
+                </form>
+            </div>
+
+            <div class="copyright-text">
+                    <p>© Copyright phanthecam 2020</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </div>
+            </div>
+        </div>
+            
+    </footer>
+
+
+
+    </body>
+</html>
