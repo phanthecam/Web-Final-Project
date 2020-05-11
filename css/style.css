@@ -533,3 +533,88 @@ padding-bottom: 60px
     width: calc(100% - 20px);
 }
 
+.membership-section {
+    padding: 50PX;
+}
+.membership-section .section-title {
+    margin-bottom: 55px;
+    text-align: center;
+}
+.section-title h2 {
+    color: #111111;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.membership-item {
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 15px 49px rgba(0, 0, 0, 0.15);
+    padding-bottom: 50px;
+}
+.membership-item .mi-title {
+    background-color: #ec681d;
+    padding: 25px 0;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.membership-item .mi-title h4 {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.membership-item .mi-price {
+    font-size: 40px;
+    color: #f15d44;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.membership-item .mi-price span {
+    font-size: 16px;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+.membership-item ul {
+    margin-bottom: 27px;
+    padding: 0px;
+}
+.membership-item ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 36px;
+}
+.membership-item ul li p {
+    margin-bottom: 0;
+    color: #6b6b6b;
+}
+
+.membership-item ul li span {
+    color: #111111;
+    font-weight: 600;
+}
+.membership-item .membership-btn {
+    color: #111111;
+}
+.primary-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 12px;
+    text-align: center;
+    width: 160px;
+    height: 46px;
+    border: 2px solid #f67831;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    -webkit-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+    line-height: 45px;
+    position: relative;
+    z-index: 1;
+
+}
